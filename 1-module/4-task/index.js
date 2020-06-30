@@ -4,5 +4,11 @@
  * @returns {boolean}
  */
 function checkSpam(str) {
-  // ваш код...
+  return isContains(str, '1XbeT') ||
+    isContains(str, 'xxx');
 }
+
+function isContains(str, word) {
+  return str.toLowerCase().includes(word.toLowerCase());
+}
+
