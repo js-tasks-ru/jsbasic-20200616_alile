@@ -1,15 +1,16 @@
 let calculator = {
-  read(a, b) {
-    this.a = +prompt('Enter a', 0);
-    this.b = +prompt('Enter b', 0);
-    alert(this.a);
-  },
+  a: 0,
+  b: 0,
   sum() {
     return this.a + this.b;
   },
-  mul(){
+  mul() {
     return this.a * this.b;
-  }
+  },
+  read(a,b) {
+    this.a = a;
+    this.b = b;
+  },
 };
 
 // НЕ УДАЛЯТЬ СТРОКУ, НУЖНА ДЛЯ ПРОВЕРКИ
