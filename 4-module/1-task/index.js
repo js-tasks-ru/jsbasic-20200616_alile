@@ -3,6 +3,15 @@
  * @param {Object[]} friends
  * @return {HTMLUListElement}
  */
+
 function makeFriendsList(friends) {
-  // ваш код...
+  let ul = document.createElement('ul');
+  console.log(ul);
+  friends.forEach(item => {
+    let liTags = document.createElement('li');
+    liTags.textContent = `${item.firstName} ${item.lastName}`;
+    ul.appendChild(liTags);
+  });
+  return ul;
 }
+
